@@ -1,9 +1,8 @@
-import React from 'react';
-import { Container, Row } from 'reactstrap';
 import ServicesItem from '../components/ServicesItem';
 import Helmet from '../components/Helmet';
-
 import CommonSection from '../components/CommonSection';
+import { Container, Row } from 'reactstrap'; // Asigură-te că ai importat Container și Row
+import carData from '../assets/carData';
 
 const Services = () => {
   return (

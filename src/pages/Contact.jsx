@@ -23,16 +23,14 @@ const Contact = () => {
             <Col lg="5" md="5 " sm="12">
               <div className="contact__info__content mt-sm-4">
                 <h6>Contact Information</h6>
-                <p className="section__description">
-                 Bucharest
-                </p>
+                <p className="section__description">Bucharest</p>
                 <div className=" d-flex align-items-center gap-2">
                   <h6 className="fs-6 mb-0">Email: </h6>
                   <p className="section__description mb-0">example@gmail.com</p>
                 </div>
                 <div className=" d-flex align-items-center gap-2">
                   <h6 className="fs-6 mb-0">Phone: </h6>
-                  <p className="section__description mb-0">+40 8 123456789</p>
+                  <p className="section__description mb-0">+40 21 123456789</p>
                 </div>
                 <h6 className="mt-4">Follow Us:</h6>
 

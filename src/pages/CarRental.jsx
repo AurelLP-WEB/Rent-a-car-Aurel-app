@@ -47,6 +47,9 @@ const CarRental = () => {
                 <option value="Default">Default</option>
                 <option value="Low-High">Price ( Low to High )</option>
                 <option value="High-Low">Price ( High to Low )</option>
+                <option value="Category">Economy ( Eco )</option>
+                <option value="Category">SUV ( Sport Utility )</option>
+                <option value="Category">Luxury ( Premium )</option>
               </select>
             </div>
 

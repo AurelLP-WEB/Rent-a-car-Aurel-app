@@ -35,6 +35,7 @@ const PRODUCT__CATEGORY = [
 
 const Products = () => {
   const { data: products, isPending, error } = useFetch(`${BASE_URL}/products`);
+
   const [pageNumber, setPageNumber] = useState(0);
   const productPerPage = 9;
   const visitedPage = pageNumber * productPerPage;

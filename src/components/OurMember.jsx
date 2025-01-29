@@ -9,7 +9,7 @@ import '../styles/our-member.css';
 
 const OUR__MEMBERS = [
   {
-    name: 'Jhon Doe',
+    name: 'John Doe',
     experience: '5 years of experience',
     fbUrl: '#',
     instUrl: '#',
@@ -39,7 +39,7 @@ const OUR__MEMBERS = [
   },
 
   {
-    name: 'Jhon Doe',
+    name: 'John Doe',
     experience: '5 years of experience',
     fbUrl: '#',
     instUrl: '#',

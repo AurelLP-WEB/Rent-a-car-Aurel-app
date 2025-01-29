@@ -50,25 +50,22 @@ const BlogDetails = () => {
                   <h6 className=" fw-normal ps-5">
                     <blockquote>{blog.quote}</blockquote>
                   </h6>
-
-                  <p className="section__description">{blog.description}</p>
                 </div>
 
                 <div className="comment__list mt-5">
-                  <h4 className="mb-5">3 Comments</h4>
+                  <h4 className="mb-5">2 Comments</h4>
                   <div className="single__comment d-flex  gap-3">
                     <img src={Cimg01} alt="" />
 
                     <div className="comment__content">
-                      <h6>Aurel</h6>
+                      <h6>Clau</h6>
                       <p className="section__description mb-0">21 Dec, 2023</p>
                       <p className="section__description ">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Nulla quis quod saepe, quas commodi voluptas
-                        obcaecati repudiandae omnis exercitationem accusamus.{' '}
+                        You are welcome to add or share any experiences,
+                        comments are allowed to make us feel better.{' '}
                       </p>
-                      <span className="replay d-flex align-items-center gap-1">
-                        <i class="ri-reply-line"></i> Replay
+                      <span className="reply d-flex align-items-center gap-1">
+                        <i class="ri-reply-line"></i> Reply
                       </span>
                     </div>
                   </div>

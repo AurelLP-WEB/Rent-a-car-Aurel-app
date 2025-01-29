@@ -1,28 +1,51 @@
-import React, { useEffect } from "react";
-
-import carData from "../assets/carData";
-import { Container, Row, Col } from "reactstrap";
-import Helmet from "../components/Helmet/Helmet";
-import { useParams } from "react-router-dom";
-import BookingForm from "../components/UI/BookingForm";
-import PaymentMethod from "../components/UI/PaymentMethod";
+import React, { useEffect } from 'react';
+import carData from '../assets/carData'; // Importă corect datele
+import { Container, Row, Col } from 'reactstrap';
+import Helmet from '../components/Helmet';
+import { useParams } from 'react-router-dom';
+import BookingForm from '../components/UI/BookingForm';
+import PaymentMethod from '../components/UI/PaymentMethod';
 
 const CarDetails = () => {
-  const { slug } = useParams();
+  const { slug } = useParams(); // Obține slug-ul din URL
 
-  const singleCarItem = carData.find((item) => item.carName === slug);
+  // Găsește mașina folosind slug
+  const singleCarItem = carData.find(item => item.carName === slug);
 
+  // Efect pentru resetarea poziției de scroll
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [singleCarItem]);
 
+  // Dacă mașina nu există, afișează un mesaj de eroare
+  if (!singleCarItem) {
+    return (
+      <Helmet title="Car Not Found">
+        <section>
+          <Container>
+            <Row>
+              <Col>
+                <h2 className="text-center">Car not found!</h2>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+      </Helmet>
+    );
+  }
+
+  // Afișează detaliile mașinii
   return (
     <Helmet title={singleCarItem.carName}>
       <section>
         <Container>
           <Row>
             <Col lg="6">
-              <img src={singleCarItem.imgUrl} alt="" className="w-100" />
+              <img
+                src={singleCarItem.imgUrl}
+                alt={singleCarItem.carName}
+                className="w-100"
+              />
             </Col>
 
             <Col lg="6">
@@ -34,8 +57,8 @@ const CarDetails = () => {
                     ${singleCarItem.price}.00 / Day
                   </h6>
 
-                  <span className=" d-flex align-items-center gap-2">
-                    <span style={{ color: "#f9a826" }}>
+                  <span className="d-flex align-items-center gap-2">
+                    <span style={{ color: '#f9a826' }}>
                       <i class="ri-star-s-fill"></i>
                       <i class="ri-star-s-fill"></i>
                       <i class="ri-star-s-fill"></i>
@@ -51,56 +74,56 @@ const CarDetails = () => {
                 </p>
 
                 <div
-                  className=" d-flex align-items-center mt-3"
-                  style={{ columnGap: "4rem" }}
+                  className="d-flex align-items-center mt-3"
+                  style={{ columnGap: '4rem' }}
                 >
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className="d-flex align-items-center gap-1 section__description">
                     <i
-                      class="ri-roadster-line"
-                      style={{ color: "#f9a826" }}
-                    ></i>{" "}
+                      className="ri-roadster-line"
+                      style={{ color: '#f9a826' }}
+                    ></i>{' '}
                     {singleCarItem.model}
                   </span>
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className="d-flex align-items-center gap-1 section__description">
                     <i
-                      class="ri-settings-2-line"
-                      style={{ color: "#f9a826" }}
-                    ></i>{" "}
+                      className="ri-settings-2-line"
+                      style={{ color: '#f9a826' }}
+                    ></i>{' '}
                     {singleCarItem.automatic}
                   </span>
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className="d-flex align-items-center gap-1 section__description">
                     <i
                       class="ri-timer-flash-line"
-                      style={{ color: "#f9a826" }}
-                    ></i>{" "}
+                      style={{ color: '#f9a826' }}
+                    ></i>{' '}
                     {singleCarItem.speed}
                   </span>
                 </div>
 
                 <div
-                  className=" d-flex align-items-center mt-3"
-                  style={{ columnGap: "2.8rem" }}
+                  className="d-flex align-items-center mt-3"
+                  style={{ columnGap: '2.8rem' }}
                 >
-                  <span className=" d-flex align-items-center gap-1 section__description">
-                    <i class="ri-map-pin-line" style={{ color: "#f9a826" }}></i>{" "}
+                  <span className="d-flex</span> align-items-center gap-1 section__description">
+                    <i class="ri-map-pin-line" style={{ color: '#f9a826' }}></i>{' '}
                     {singleCarItem.gps}
                   </span>
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className="d-flex align-items-center gap-1 section__description">
                     <i
                       class="ri-wheelchair-line"
-                      style={{ color: "#f9a826" }}
-                    ></i>{" "}
+                      style={{ color: '#f9a826' }}
+                    ></i>{' '}
                     {singleCarItem.seatType}
                   </span>
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className="d-flex align-items-center gap-1 section__description">
                     <i
                       class="ri-building-2-line"
-                      style={{ color: "#f9a826" }}
-                    ></i>{" "}
+                      style={{ color: '#f9a826' }}
+                    ></i>{' '}
                     {singleCarItem.brand}
                   </span>
                 </div>

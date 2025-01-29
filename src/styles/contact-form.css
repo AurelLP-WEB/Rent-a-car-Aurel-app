@@ -1,21 +1,75 @@
-.contact__form {
-  width: 47%;
+/* Stil pentru formularul de închiriere */
+.rental-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.contact__form input {
-  border: none;
-  border: 1px solid #7c8a972a;
-  padding: 8px 15px;
-  color: #7c8a97;
+.rental-form-container h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
 }
 
-.contact__form textarea {
-  border: none;
-  border: 1px solid #7c8a972a;
-  padding: 8px 15px;
-  color: #7c8a97;
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
 }
 
-.contact__form textarea:focus {
+.form-control {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: #4c9f70;
   outline: none;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+button.btn-primary {
+  background-color: #4c9f70;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button.btn-primary:hover {
+  background-color: #398c59;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.status-message {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #4c9f70;
+}
+
+.status-error {
+  color: #e74c3c;
 }

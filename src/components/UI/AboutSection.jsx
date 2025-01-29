@@ -1,20 +1,20 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import "../../styles/about-section.css";
-import aboutImg from "../../assets/all-images/cars-img/bmw-offer.png";
+import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import image22 from '../../assets/all-images/image22.jpg';
 
 const AboutSection = ({ aboutClass }) => {
   return (
     <section
       className="about__section"
       style={
-        aboutClass === "aboutPage"
-          ? { marginTop: "0px" }
-          : { marginTop: "280px" }
+        aboutClass === 'aboutPage'
+          ? { marginTop: '0px' }
+          : { marginTop: '280px' }
       }
     >
       <Container>
         <Row>
+          {/* Text Section */}
           <Col lg="6" md="6">
             <div className="about__section-content">
               <h4 className="section__subtitle">About Us</h4>
@@ -30,33 +30,38 @@ const AboutSection = ({ aboutClass }) => {
 
               <div className="about__section-item d-flex align-items-center">
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
-                  amet.
+                  <i className="ri-checkbox-circle-line"></i> Lorem ipsum dolor
+                  sit amet.
                 </p>
 
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
-                  amet.
+                  <i className="ri-checkbox-circle-line"></i> Lorem ipsum dolor
+                  sit amet.
                 </p>
               </div>
 
               <div className="about__section-item d-flex align-items-center">
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
-                  amet.
+                  <i className="ri-checkbox-circle-line"></i> Lorem ipsum dolor
+                  sit amet.
                 </p>
 
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
-                  amet.
+                  <i className="ri-checkbox-circle-line"></i> Lorem ipsum dolor
+                  sit amet.
                 </p>
               </div>
             </div>
           </Col>
 
+          {/* Image Section */}
           <Col lg="6" md="6">
             <div className="about__img">
-              <img src={aboutImg} alt="" className="w-100" />
+              <img
+                src="https://media.istockphoto.com/id/1330071835/photo/automotive-business-car-sale-or-rental-concept-happy-customer-with-car-dealer-agent-making.jpg?s=612x612&w=0&k=20&c=2MHg8zS_WDrr4qdpkcoH2DWgwf2dSEr41XoO9vvRkgo="
+                alt="Happy customer with car dealer agent making a deal"
+                className="w-100"
+              />
             </div>
           </Col>
         </Row>

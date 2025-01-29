@@ -43,10 +43,13 @@ const Footer = () => {
                   </Link>
                 </h1>
                 <p className="footer__logo-content">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Nulla id ipsa neque harum quod quae reiciendis et quasi illum
-                  alias. Vero ipsam a omnis! Totam nam eaque sequi voluptates
-                  doloribus?
+                  Our values are centered around providing exceptional customer
+                  service, ensuring safety and reliability in our vehicles, and
+                  offering competitive pricing. We strive to make the car rental
+                  process as seamless and convenient as possible for our
+                  customers. Our commitment to quality and integrity drives us
+                  to continually improve and innovate in the car rental
+                  industry.
                 </p>
               </div>
             </Col>
@@ -71,11 +74,9 @@ const Footer = () => {
                 <h5 className="text-light mb-4 footer__quick__links">
                   Head Office
                 </h5>
-                <p className="head__office">
-                Calea Victoriei, Bucharest
-                </p>
+                <p className="head__office">Calea Victoriei, Bucharest</p>
                 <p className="head__office">Phone: +407 123 456 789 </p>
-                <p className="head__office">Email: example@gmail.com</p>
+                <p className="head__office">Email: email@gmail.com</p>
                 <p className="head__office">Office Time: 10am - 6pm</p>
               </div>
             </Col>
@@ -107,8 +108,8 @@ const Footer = () => {
             <Col>
               <div className="footer__bottom">
                 <p className="section__description pt-4 fw-bold text-center d-flex align-items-center justify-content-center gap-1">
-                  <i class="ri-copyright-line"></i> Copyright 2022, developed by
-                  <span>Aurel</span>. All Rights Reserved
+                  <i class="ri-copyright-line"></i> Copyright 2024, developed by
+                  <span>Clau</span>. All Rights Reserved
                 </p>
               </div>
             </Col>

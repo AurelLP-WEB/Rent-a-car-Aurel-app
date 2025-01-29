@@ -7,6 +7,7 @@ import { cartActions } from '../store/cartSlice';
 const ProductCard = props => {
   const { id, title, price, imgUrl } = props.item;
   const dispatch = useDispatch();
+
   const addToCart = () => {
     dispatch(
       cartActions.addItem({
@@ -17,10 +18,14 @@ const ProductCard = props => {
       })
     );
   };
+
+  // Log pentru a verifica datele
+  console.log('Product item:', props.item);
+
   return (
     <div className="product__item">
       <div className="product__item-img">
-        <img src={imgUrl} alt="" className="w-100" />
+        <img src={imgUrl} alt={title} className="w-100" />
       </div>
 
       <div className="product__info d-flex justify-content-between align-items-center">
@@ -32,7 +37,7 @@ const ProductCard = props => {
         </div>
 
         <span className="cart__icon me-5">
-          <i class="ri-shopping-cart-2-line" onClick={addToCart}></i>
+          <i className="ri-shopping-cart-2-line" onClick={addToCart}></i>
         </span>
       </div>
     </div>

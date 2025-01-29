@@ -13,10 +13,10 @@ import BlogList from '../components/BlogList';
 import BecomeDriver from '../components/BecomeDriver';
 
 import AboutSection from '../components/AboutSection';
-import carData from "../assets/carData";
-import ServicesList from "../components/UI/ServicesList";
-import CarItem from "../components/UI/CarItem";
-import BecomeDriverSection from "../components/UI/BecomeDriverSection";
+import carData from '../assets/carData';
+import ServicesList from '../components/UI/ServicesList';
+import CarItem from '../components/UI/CarItem';
+import BecomeDriverSection from '../components/UI/BecomeDriverSection';
 
 const Home = () => {
   return (
@@ -29,7 +29,7 @@ const Home = () => {
           <Container>
             <Row className="form__row">
               <Col lg="4" md="4">
-                <div className="find__cars-left">
+                <div className="find__cars-left custom-text">
                   <h2>Find your best car here</h2>
                 </div>
               </Col>
@@ -65,7 +65,7 @@ const Home = () => {
               <h2 className="section__title">Hot Offers</h2>
             </Col>
 
-            {carData.slice(0, 6).map((item) => (
+            {carData.slice(0, 6).map(item => (
               <CarItem item={item} key={item.id} />
             ))}
           </Row>

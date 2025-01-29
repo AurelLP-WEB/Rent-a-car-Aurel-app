@@ -1,29 +1,80 @@
-.login__form input {
-  border: none;
-  outline: none;
-  color: #7c8a97 !important;
-  border-left: 1px solid #7c8a972f;
-  border-radius: 0;
-  font-size: 14px;
-  padding: 5px 15px;
+/* Containerul formularului */
+.login__form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
 }
 
+/* Inputurile formularului */
+.login__form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.login__form input:focus {
+  border-color: #0056b3;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
+
+/* Iconi in input */
 .login__form span i {
   color: #7c8a97;
-  font-size: 1rem;
+  font-size: 16px;
+  margin-right: 10px;
 }
 
-.login__form {
-  border: 1px solid #7c8a972f;
-  padding: 5px 15px;
-}
-
+/* Butonul de submit */
 .login__btn {
-  padding: 7px 25px;
+  width: 100%;
+  padding: 12px 0;
   border: none;
   outline: none;
-  background: #000d6b;
+  background-color: #0056b3;
   color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.login__btn:hover {
+  background-color: #004494;
+}
+
+/* Checkbox pentru termeni si conditii */
+.login__form .terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.login__form .terms input {
+  margin-right: 10px;
+}
+
+/* Text de link pentru "Already Have an Account?" */
+.login__form .login-link {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.login__form .login-link a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.login__form .login-link a:hover {
+  text-decoration: none;
 }

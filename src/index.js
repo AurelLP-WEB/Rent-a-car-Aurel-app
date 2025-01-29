@@ -9,6 +9,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import store from './store/store';
 import { Provider } from 'react-redux';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App';
 
